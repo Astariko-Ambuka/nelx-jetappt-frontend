@@ -1,73 +1,72 @@
-=== Nelx JetAppointments Frontend Manager ===
-Contributors: Astariko
-Tags: appointments, booking, schedule, jetappointments frontend, google meet appointments
-Requires at least: 6.2
-Tested up to: 7.0
-Stable tag: 1.0.0
-License: GPLv2 or later
-License URI: https://www.gnu.org/licenses/gpl-2.0.html
+# Nelx JetAppointments Frontend Manager
 
-Front-end schedule editor, provider action buttons, collision-safe reschedule, secure delete, inline modals and available slots endpoint tailored to JetAppointments schema.
+A powerful WordPress plugin that provides a complete frontend management experience for the [JetAppointments](https://www.jetappointments.com/) booking system. Manage appointments, schedules, and notifications directly from the frontend without accessing the WordPress admin dashboard.
 
-== Description ==
+**Contributors:** Astariko  
+**License:** GPLv2 or later  
+**License URI:** https://www.gnu.org/licenses/gpl-2.0.html
 
-**Nelx JetAppointments Frontend Manager** is a powerful extension for the JetAppointments plugin that provides a complete frontend management experience for both providers and clients.
+## Features
 
-### Key Features
+- **Schedule Editor** - Providers can manage working hours, days off, and custom schedules from the frontend
+- **Provider Action Buttons** - Confirm, reject, reschedule, and view appointment details
+- **Client Action Buttons** - Reschedule, cancel, and view appointment information
+- **Google Meet Integration** - Automatically generate Google Meet links for online appointments
+- **Email Notifications** - Automated emails for new appointments, confirmations, cancellations, and reminders
+- **In-app Notifications** - Real-time notifications for appointment events
+- **Elementor Widgets** - Drag-and-drop widgets for easy page building
+- **Timezone Support** - Handles client and provider timezones for accurate scheduling
 
-* **Schedule Editor** - Providers can manage their working hours, days off, and custom schedules directly from the frontend
-* **Provider Action Buttons** - Confirm, reject, reschedule, and view appointment information
-* **Client Action Buttons** - Reschedule, cancel, and view appointment details
-* **Google Meet Integration** - Automatically create Google Meet links for online appointments
-* **Email Notifications** - Send automated emails for new appointments, confirmations, cancellations, and reminders
-* **In-app Notifications** - Real-time notifications for appointment events
-* **Elementor Widgets** - Drag-and-drop widgets for Elementor page builder
-* **REST API** - Full REST API endpoints for custom integrations
+## Requirements
 
-### Requirements
+- WordPress 6.2 or higher
+- PHP 7.4 or higher
+- JetAppointments Booking plugin installed and activated
 
-* WordPress 6.2 or higher
-* PHP 7.4 or higher
-* JetAppointments Booking plugin installed and activated
+## Installation
 
-### Usage
-
-The plugin adds several shortcodes that can be used anywhere on your site:
-
-1. `[nelx_schedule_editor]` - Provider schedule editor
-2. `[nelx_provider_action_buttons]` - Provider appointment action buttons
-3. `[nelx_client_action_buttons]` - Client appointment action buttons
-4. `[nelx_google_meet_settings]` - Google Meet configuration for providers
-
-### Elementor Integration
-
-The plugin includes Elementor widgets for easy placement:
-- Schedule Editor
-- Google Meet Settings
-- Provider Action Buttons
-- Client Action Buttons
-
-== Installation ==
-
-1. Upload the `nelx-jetappt-frontend` folder to the `/wp-content/plugins/` directory
-2. Activate the plugin through the 'Plugins' menu in WordPress
+1. Upload the `nelx-jetappt-frontend` folder to `/wp-content/plugins/`
+2. Activate the plugin through the **Plugins** menu in WordPress
 3. Navigate to **Nelx Appointments** in the WordPress admin menu to configure settings
 4. Ensure JetAppointments plugin is installed and activated
-5. Add the desired shortcodes or Elementor widgets to your pages
+5. Add shortcodes or Elementor widgets to your pages
 
-== Frequently Asked Questions ==
+## Quick Start
 
-= Do I need JetAppointments to use this plugin? =
+### Using Shortcodes
 
-Yes, this plugin is an extension for JetAppointments and requires it to be installed and activated.
+Add the following shortcodes to any page or post:
 
-= How do I set up Google Meet integration? =
+```
+[nelx_schedule_editor]
+[nelx_provider_action_buttons]
+[nelx_client_action_buttons]
+[nelx_google_meet_settings]
+```
 
-1. Go to the Google Meet settings tab in the plugin settings
+### Using Elementor Widgets
+
+1. Edit a page with Elementor
+2. Search for **Nelx** in the widget finder
+3. Drag and drop any of these widgets:
+   - Schedule Editor
+   - Provider Action Buttons
+   - Client Action Buttons
+   - Google Meet Settings
+
+### Configuring Google Meet Integration
+
+1. Go to **Nelx Appointments** → **Google Meet Settings** in the WordPress admin
 2. Enter your Google API Client ID and Client Secret
 3. Providers can then connect their Google accounts from the frontend
 
-= How do email notifications work? =
+## FAQ
+
+**Do I need JetAppointments to use this plugin?**
+
+Yes, this plugin is an extension for JetAppointments and requires it to be installed and activated.
+
+**How do email notifications work?**
 
 The plugin sends automated emails for:
 - New appointments (to providers)
@@ -78,34 +77,50 @@ The plugin sends automated emails for:
 
 You can customize all email templates from the settings page.
 
-= Does this work with Elementor? =
+**Does this work with Elementor?**
 
 Yes, the plugin includes Elementor widgets that can be dragged and dropped into any Elementor page.
 
-== Changelog ==
+## Troubleshooting
 
-= 1.0.0 =
-* Initial release
-* Schedule editor with custom working hours and days off
-* Provider and client action buttons
-* Google Meet integration
-* Email notification system
-* In-app notification system
-* Elementor widgets
-* REST API endpoints
-* Timezone support
-* Full i18n support
+**"JetAppointments plugin is not activated"**
+- Ensure the JetAppointments Booking plugin is installed and activated in WordPress admin
 
-== Upgrade Notice ==
+**Google Meet links not generating**
+- Verify your Google API credentials are correctly configured
+- Check that providers have authorized their Google accounts
+- Ensure the provider's Google account has Google Meet access
 
-= 1.0.0 =
-Initial release. Please read the installation instructions carefully.
+**Emails not being sent**
+- Check your WordPress mail configuration
+- Verify email templates are not disabled in settings
+- Check your hosting provider's email sending limits
 
-== Screenshots ==
+## Changelog
 
-1. Schedule Editor - Manage working hours and days off
-2. Provider Action Buttons - Confirm, reject, reschedule appointments
-3. Client Action Buttons - Reschedule, cancel appointments
-4. Google Meet Settings - Connect Google account
-5. Email Templates - Customize notification emails
-6. Settings Page - Configure plugin settings
+### [1.0.0] - 2026-06-23
+
+**Initial Release**
+
+- Schedule editor with custom working hours and days off
+- Provider and client action buttons
+- Google Meet integration
+- Email notification system
+- In-app notification system
+- Elementor widgets
+- Timezone support
+- Full i18n (internationalization) support
+
+See [CHANGELOG.md](CHANGELOG.md) for detailed version history.
+
+## Versioning
+
+This project adheres to [Semantic Versioning](https://semver.org/). For version history, see [VERSIONING.md](VERSIONING.md) and [Releases](https://github.com/Astariko-Ambuka/nelx-jetappt-frontend/releases).
+
+## License
+
+This plugin is licensed under the GPLv2 or later. See [LICENSE](https://www.gnu.org/licenses/gpl-2.0.html) for details.
+
+## Support
+
+For issues, questions, or feedback, please open an issue on [GitHub](https://github.com/Astariko-Ambuka/nelx-jetappt-frontend/issues).
