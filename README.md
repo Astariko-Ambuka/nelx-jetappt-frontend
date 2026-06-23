@@ -1,6 +1,6 @@
 # Nelx JetAppointments Frontend Manager
 
-A powerful WordPress plugin that provides a complete frontend management experience for the [JetAppointments](https://www.jetappointments.com/) booking system. Manage appointments, schedules, and notifications directly from the frontend without accessing the WordPress admin dashboard.
+A powerful WordPress plugin that provides a complete frontend management experience for the [JetAppointments](https://crocoblock.com/plugins/jetappointment/) booking system. Manage appointments, schedules, and notifications directly from the frontend without accessing the WordPress admin dashboard.
 
 **Contributors:** Astariko  
 **License:** GPLv2 or later  
